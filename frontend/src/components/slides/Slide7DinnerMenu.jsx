@@ -4,11 +4,10 @@ import { Heart, Sparkles, UtensilsCrossed, Wine, Star } from 'lucide-react';
 
 export const Slide7DinnerMenu = () => {
   const sushiItems = [
-    { name: "Salmon Nigiri", description: "Fresh Atlantic salmon over seasoned rice", pieces: "2 pcs" },
-    { name: "Tuna Sashimi", description: "Premium bluefin tuna, thinly sliced", pieces: "4 pcs" },
-    { name: "Rainbow Roll", description: "California roll topped with assorted fish", pieces: "8 pcs" },
-    { name: "Spicy Tuna Roll", description: "Fresh tuna with spicy mayo and tempura crunch", pieces: "6 pcs" },
-    { name: "Dragon Roll", description: "Eel and cucumber topped with avocado", pieces: "8 pcs" },
+    { name: "Ericks Special Salmon Nigir!", description: "Salmon sourced from our finest local costco, served over rice :)", pieces: "2 pcs" },
+    { name: "California roll!", description: "A basic attempt at a california roll!", pieces: "4 pcs" },
+    { name: "Rainbow Roll", description: "California roll topped with other fish!", pieces: "8 pcs" },
+    { name: "Spicy Salmon Roll", description: "Fresh tuna with spicy mayo and tempura crunch", pieces: "6 pcs" },
     { name: "Lovers' Special Roll", description: "Chef's special creation for two 💕", pieces: "10 pcs" },
   ];
   

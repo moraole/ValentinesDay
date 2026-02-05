@@ -5,10 +5,10 @@ import { Heart, Star, Camera, Coffee, Music, Plane } from 'lucide-react';
 
 export const Slide3FavoriteMemories = ({ onNext }) => {
   const memories = [
-    { icon: Coffee, title: "Our First Date", description: "The butterflies, the laughter, the beginning..." },
-    { icon: Camera, title: "Adventures Together", description: "Every moment with you is a photo-worthy memory" },
-    { icon: Music, title: "Our Song", description: "The melody that reminds me of us" },
-    { icon: Plane, title: "Trips & Dreams", description: "Exploring the world by your side" },
+    { icon: Coffee, title: "Remember our first run in Bellingham...", description: "I miss running with you and then getting coffee!" },
+    { icon: Camera, title: "Adventures Together", description: "Every moment with you is a happy memory. I love taking pictures for you and with you :). We should go exploring like little suede!" },
+    { icon: Music, title: "I love your voice", description: "Everytime you sing it brings so much joy to me. even if u do it all the time teehee:" },
+    { icon: Plane, title: "Mexico!!", description: "Thank you for making my first trip out of the country so special!!" },
   ];
   
   return (
@@ -33,11 +33,11 @@ export const Slide3FavoriteMemories = ({ onNext }) => {
         </div>
         
         <h2 className="font-script text-4xl sm:text-5xl text-valentine-deep text-center mb-4">
-          Our Favorite Memories
+          Favorite memories!
         </h2>
         
         <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-          Every moment spent with you becomes a cherished memory I hold close to my heart
+          Every moment spent with you becomes a the bestest memory I hold close to my heart
         </p>
         
         {/* Memory Cards Grid */}
@@ -56,7 +56,7 @@ export const Slide3FavoriteMemories = ({ onNext }) => {
                   <h3 className="font-elegant text-lg text-foreground mb-1">{memory.title}</h3>
                   <p className="text-sm text-muted-foreground">{memory.description}</p>
                   <p className="text-xs text-valentine-rose/70 mt-2 italic">
-                    [Add your personal memory here]
+                    Meep!
                   </p>
                 </div>
               </div>
@@ -69,7 +69,8 @@ export const Slide3FavoriteMemories = ({ onNext }) => {
           <Star className="w-8 h-8 text-valentine-gold mx-auto mb-4" />
           <h3 className="font-script text-2xl text-valentine-deep mb-3">Our Most Special Memory</h3>
           <p className="text-muted-foreground italic max-w-md mx-auto">
-            [Write about that one unforgettable moment that means everything to both of you]
+            Its simple but...
+            I loved when we went to pike place and spent all day together :D, we got cool seel picture in our fridge, met cool ppl and then drank a lil! Then we walked back to the transit, went home and ate yummy ramen!
           </p>
         </div>
       </div>

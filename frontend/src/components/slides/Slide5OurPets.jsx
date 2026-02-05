@@ -22,30 +22,54 @@ export const Slide5OurPets = ({ onNext }) => {
         </div>
         
         <h2 className="font-script text-4xl sm:text-5xl text-valentine-deep text-center mb-4 animate-fade-up">
-          Our Fur Babies
+          These little guys love you too!!!
         </h2>
         
         {/* Single description for all pets */}
         <p className="text-center text-muted-foreground mb-10 max-w-lg mx-auto animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Meet Suede, Blu, and Popa — our little family that makes every day brighter with their love and silly antics 🐾
+          Suede, Blu, and Popa!! 🐾
         </p>
         
         {/* Image Placeholders Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          {['Suede', 'Blu', 'Popa'].map((name, index) => (
-            <div 
-              key={index}
-              className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
-              style={{ animationDelay: `${0.15 * (index + 1)}s` }}
-            >
-              {/* Image placeholder */}
-              <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-valentine-blush/50 to-valentine-peach/50 flex flex-col items-center justify-center border-2 border-dashed border-valentine-rose/30 group-hover:border-valentine-rose/50 transition-colors">
-                <ImageIcon className="w-12 h-12 text-valentine-rose/40 mb-2" />
-                <p className="text-sm text-valentine-deep/60 font-medium">{name}</p>
-                <p className="text-xs text-muted-foreground mt-1">[Add photo]</p>
-              </div>
+          {/* Suede */}
+          <div 
+            className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
+            style={{ animationDelay: '0.15s' }}
+          >
+            <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-valentine-blush/50 to-valentine-peach/50 flex flex-col items-center justify-center border-2 border-dashed border-valentine-rose/30 group-hover:border-valentine-rose/50 transition-colors overflow-hidden">
+              <ImageIcon className="w-12 h-12 text-valentine-rose/40 mb-2" />
+              <p className="text-sm text-valentine-deep/60 font-medium">Suede</p>
+              <p className="text-xs text-muted-foreground mt-1">[Add photo]</p>
             </div>
-          ))}
+          </div>
+          
+          {/* Blu */}
+          <div 
+            className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
+            style={{ animationDelay: '0.3s' }}
+          >
+            <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-valentine-blush/50 to-valentine-peach/50 flex flex-col items-center justify-center border-2 border-dashed border-valentine-rose/30 group-hover:border-valentine-rose/50 transition-colors overflow-hidden">
+              <ImageIcon className="w-12 h-12 text-valentine-rose/40 mb-2" />
+              <p className="text-sm text-valentine-deep/60 font-medium">Blu</p>
+              <p className="text-xs text-muted-foreground mt-1">[Add photo]</p>
+            </div>
+          </div>
+          
+          {/* Popa - with actual photo */}
+          <div 
+            className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
+            style={{ animationDelay: '0.45s' }}
+          >
+            <div className="aspect-square w-full rounded-2xl overflow-hidden">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_pawsome-valentines/artifacts/gs0xqxp5_IMG_0345.jpeg" 
+                alt="Popa"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <p className="text-center text-sm text-valentine-deep font-medium mt-2">Popa</p>
+          </div>
         </div>
         
         {/* Family message */}
