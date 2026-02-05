@@ -7,7 +7,7 @@ export const CuteDog = ({ className = '' }) => {
       <div className="relative w-28 h-40 sm:w-36 sm:h-48">
         
         {/* SOMBRERO - positioned relative to head */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-28 z-30">
+        <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 sm:w-28 z-30">
           {/* Sombrero top (dome) */}
           <div className="relative flex flex-col items-center">
             {/* Main dome */}
