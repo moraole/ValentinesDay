@@ -60,7 +60,7 @@ export const CuteCat = ({ className = '' }) => {
             <div className="w-1 h-1 bg-yellow-200 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
           
-          <div className="absolute -top-1 -right-1 sm:-right-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
+          <div className="absolute top-1 sm:top-0 -right-1 sm:-right-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
             <div className="w-1 h-1.5 bg-purple-400 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2" />
             <div className="w-1.5 h-1 bg-purple-400 rounded-full absolute top-1/2 left-0 transform -translate-y-1/2" />
             <div className="w-1.5 h-1 bg-purple-400 rounded-full absolute top-1/2 right-0 transform -translate-y-1/2" />
