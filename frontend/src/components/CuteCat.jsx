@@ -9,20 +9,20 @@ export const CuteCat = ({ className = '' }) => {
         {/* HEAD - Main anchor for everything */}
         <div className="absolute top-8 sm:top-10 left-1/2 transform -translate-x-1/2 w-24 sm:w-28 h-20 sm:h-24 bg-[hsl(25,45%,45%)] rounded-[50%] z-10">
           
-          {/* EARS - Attached to head */}
-          <div className="absolute -top-3 sm:-top-4 left-1 sm:left-2">
+          {/* EARS - Attached to head, lowered */}
+          <div className="absolute -top-1 sm:-top-2 left-1 sm:left-2">
             <div className="w-0 h-0 border-l-[10px] sm:border-l-[12px] border-l-transparent border-r-[10px] sm:border-r-[12px] border-r-transparent border-b-[18px] sm:border-b-[22px] border-b-[hsl(25,45%,40%)] transform -rotate-6" />
             {/* Inner ear */}
             <div className="absolute top-[6px] sm:top-[8px] left-[4px] sm:left-[5px] w-0 h-0 border-l-[6px] sm:border-l-[7px] border-l-transparent border-r-[6px] sm:border-r-[7px] border-r-transparent border-b-[10px] sm:border-b-[12px] border-b-[hsl(350,60%,75%)] transform -rotate-6" />
           </div>
-          <div className="absolute -top-3 sm:-top-4 right-1 sm:right-2">
+          <div className="absolute -top-1 sm:-top-2 right-1 sm:right-2">
             <div className="w-0 h-0 border-l-[10px] sm:border-l-[12px] border-l-transparent border-r-[10px] sm:border-r-[12px] border-r-transparent border-b-[18px] sm:border-b-[22px] border-b-[hsl(25,45%,40%)] transform rotate-6" />
             {/* Inner ear */}
             <div className="absolute top-[6px] sm:top-[8px] right-[4px] sm:right-[5px] w-0 h-0 border-l-[6px] sm:border-l-[7px] border-l-transparent border-r-[6px] sm:border-r-[7px] border-r-transparent border-b-[10px] sm:border-b-[12px] border-b-[hsl(350,60%,75%)] transform rotate-6" />
           </div>
           
-          {/* FLOWER CROWN - On top of head between ears */}
-          <div className="absolute -top-5 sm:-top-6 left-1/2 transform -translate-x-1/2 z-30 flex items-end">
+          {/* FLOWER CROWN - On top of head between ears, lowered */}
+          <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-30 flex items-end">
             {/* Left hibiscus - pink */}
             <div className="relative w-4 h-4 sm:w-5 sm:h-5 -mr-0.5">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1.5 h-2 sm:w-2 sm:h-2.5 bg-pink-400 rounded-full" />
