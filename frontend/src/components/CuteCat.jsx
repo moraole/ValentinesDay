@@ -51,8 +51,8 @@ export const CuteCat = ({ className = '' }) => {
             </div>
           </div>
           
-          {/* Small side flowers - on ears */}
-          <div className="absolute -top-1 -left-1 sm:-left-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
+          {/* Small side flowers - on ears, lowered */}
+          <div className="absolute top-1 sm:top-0 -left-1 sm:-left-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
             <div className="w-1 h-1.5 bg-orange-400 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2" />
             <div className="w-1.5 h-1 bg-orange-400 rounded-full absolute top-1/2 left-0 transform -translate-y-1/2" />
             <div className="w-1.5 h-1 bg-orange-400 rounded-full absolute top-1/2 right-0 transform -translate-y-1/2" />
