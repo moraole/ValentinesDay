@@ -40,19 +40,17 @@ export const Slide2HowWeMet = ({ onNext }) => {
         {/* Story text - placeholder for user to customize */}
         <div className="space-y-4 text-center">
           <p className="font-elegant text-lg sm:text-xl text-foreground/90 leading-relaxed">
-            From the moment our eyes met, I knew there was something special about you.
+            Little Erick one day invited little lei over...
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            [Customize this section with your own story about how you two met! 
-            Was it at a coffee shop? Through mutual friends? At work or school? 
-            Write about that magical first moment here.]
+            and then he fell in love with cute little lei!!! Erick loved how kind, great and awesome little lei is! Erick is motivated and inspired by how good of a person little lei is :)
           </p>
         </div>
         
         {/* Quote decoration */}
         <div className="mt-8 p-6 bg-valentine-cream/50 rounded-2xl border border-valentine-blush/30">
           <p className="font-elegant text-valentine-deep italic text-center">
-            &ldquo;Every love story is beautiful, but ours is my favorite.&rdquo;
+            &ldquo;Meep. I love you little Lei and I fell in love with your smile and happiness!&rdquo;
           </p>
         </div>
       </div>

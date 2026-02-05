@@ -82,13 +82,13 @@ export const Slide6Question = ({ onNext }) => {
           </div>
           
           <p className="text-muted-foreground max-w-md mx-auto">
-            Every moment with you is a blessing. You make my heart complete, and I can't imagine spending this special day with anyone else.
+            Every moment with you is the best! You make me so happy all the time, i love you so much and I look forward to spending more time with you. you make me a better version of myself and I hope to bring you lots of joy as well!!
           </p>
           
           {/* Custom message area */}
           <div className="mt-8 p-6 bg-valentine-cream/50 rounded-2xl border border-valentine-blush/30">
             <p className="font-elegant text-valentine-deep italic">
-              [Add your personal message here - tell Lei why they are so special to you]
+              MEEP - Erick Mora
             </p>
           </div>
         </div>

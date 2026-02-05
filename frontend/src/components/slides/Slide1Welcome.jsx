@@ -35,10 +35,10 @@ export const Slide1Welcome = ({ onNext }) => {
       {/* Main Title */}
       <div className="text-center mb-8 animate-fade-up">
         <h1 className="font-script text-5xl sm:text-6xl md:text-7xl text-valentine-deep mb-4">
-          Happy Valentine's Day
+          Meep!
         </h1>
         <p className="font-elegant text-xl sm:text-2xl text-valentine-rose italic">
-          A Love Story
+          A Love story for two little cute pets!
         </p>
       </div>
       

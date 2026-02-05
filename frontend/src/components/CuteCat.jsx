@@ -22,7 +22,7 @@ export const CuteCat = ({ className = '' }) => {
           </div>
           
           {/* FLOWER CROWN - On top of head between ears, lowered */}
-          <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-30 flex items-end">
+          <div className="absolute -top-3 sm:-top-200 left-1/2 transform -translate-x-1/2 z-30 flex items-end">
             {/* Left hibiscus - pink */}
             <div className="relative w-4 h-4 sm:w-5 sm:h-5 -mr-0.5">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1.5 h-2 sm:w-2 sm:h-2.5 bg-pink-400 rounded-full" />
@@ -52,7 +52,7 @@ export const CuteCat = ({ className = '' }) => {
           </div>
           
           {/* Small side flowers - on ears, lowered */}
-          <div className="absolute top-1 sm:top-0 -left-1 sm:-left-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
+          <div className="absolute top-1 sm:top-10 -left-1 sm:-left-0 z-20 w-3 h-3 sm:w-4 sm:h-4">
             <div className="w-1 h-1.5 bg-orange-400 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2" />
             <div className="w-1.5 h-1 bg-orange-400 rounded-full absolute top-1/2 left-0 transform -translate-y-1/2" />
             <div className="w-1.5 h-1 bg-orange-400 rounded-full absolute top-1/2 right-0 transform -translate-y-1/2" />
@@ -60,7 +60,7 @@ export const CuteCat = ({ className = '' }) => {
             <div className="w-1 h-1 bg-yellow-200 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
           
-          <div className="absolute top-1 sm:top-0 -right-1 sm:-right-2 z-20 w-3 h-3 sm:w-4 sm:h-4">
+          <div className="absolute top-1 sm:top-10 -right-1 sm:-right-0 z-20 w-3 h-3 sm:w-4 sm:h-4">
             <div className="w-1 h-1.5 bg-purple-400 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2" />
             <div className="w-1.5 h-1 bg-purple-400 rounded-full absolute top-1/2 left-0 transform -translate-y-1/2" />
             <div className="w-1.5 h-1 bg-purple-400 rounded-full absolute top-1/2 right-0 transform -translate-y-1/2" />
@@ -91,12 +91,12 @@ export const CuteCat = ({ className = '' }) => {
           <div className="absolute top-[52px] sm:top-[62px] left-[48px] sm:left-[58px] w-2 h-1.5 sm:w-2.5 sm:h-2 border-r-[1.5px] sm:border-r-2 border-b-[1.5px] sm:border-b-2 border-[hsl(350,50%,65%)] rounded-br-full" />
           
           {/* Whiskers */}
-          <div className="absolute top-11 sm:top-14 -left-4 sm:-left-6 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform -rotate-6" />
+          <div className="absolute top-11 sm:top-14 -left-4 sm:-left-9 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform -rotate-6" />
           <div className="absolute top-[48px] sm:top-[60px] -left-5 sm:-left-7 w-6 sm:w-8 h-[1px] bg-[hsl(30,30%,70%)]" />
           <div className="absolute top-[52px] sm:top-[66px] -left-4 sm:-left-6 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform rotate-6" />
           
-          <div className="absolute top-11 sm:top-14 -right-4 sm:-right-6 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform rotate-6" />
-          <div className="absolute top-[48px] sm:top-[60px] -right-5 sm:-right-7 w-6 sm:w-8 h-[1px] bg-[hsl(30,30%,70%)]" />
+          <div className="absolute top-11 sm:top-14 -right-9 sm:-right-60 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform rotate-6" />
+          <div className="absolute top-[48px] sm:top-[60px] -right-90 sm:-right-7 w-6 sm:w-8 h-[1px] bg-[hsl(30,30%,70%)]" />
           <div className="absolute top-[52px] sm:top-[66px] -right-4 sm:-right-6 w-5 sm:w-7 h-[1px] bg-[hsl(30,30%,70%)] transform -rotate-6" />
           
           {/* Cheeks */}
@@ -151,7 +151,7 @@ export const CuteCat = ({ className = '' }) => {
         </div>
         
         {/* Tail with flower */}
-        <div className="absolute bottom-4 sm:bottom-5 -left-2 sm:-left-3 z-5">
+        <div className="absolute bottom-4 sm:bottom-5 -left-542 sm:-left-50 z-5">
           <div className="w-2.5 sm:w-3 h-10 sm:h-14 bg-[hsl(25,45%,45%)] rounded-full animate-cat-tail origin-bottom transform rotate-[30deg]">
             {/* Flower on tail tip */}
             <div className="absolute -top-1 left-0 w-3 h-3">
