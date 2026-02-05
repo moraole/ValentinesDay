@@ -1,14 +1,27 @@
 import React from 'react';
 import { SparkleGroup } from '../Sparkle';
-import { Heart, Sparkles, UtensilsCrossed, Wine, Star } from 'lucide-react';
+import { Heart, Sparkles, UtensilsCrossed, Wine, Star, Sandwich, Cake } from 'lucide-react';
 
 export const Slide7DinnerMenu = () => {
   const sushiItems = [
-    { name: "Ericks Special Salmon Nigir!", description: "Salmon sourced from our finest local costco, served over rice :)", pieces: "2 pcs" },
-    { name: "California roll!", description: "A basic attempt at a california roll!", pieces: "4 pcs" },
-    { name: "Rainbow Roll", description: "California roll topped with other fish!", pieces: "8 pcs" },
-    { name: "Spicy Salmon Roll", description: "Fresh tuna with spicy mayo and tempura crunch", pieces: "6 pcs" },
+    { name: "Salmon Nigiri", description: "Fresh Atlantic salmon over seasoned rice", pieces: "2 pcs" },
+    { name: "Tuna Sashimi", description: "Premium bluefin tuna, thinly sliced", pieces: "4 pcs" },
+    { name: "Rainbow Roll", description: "California roll topped with assorted fish", pieces: "8 pcs" },
+    { name: "Spicy Tuna Roll", description: "Fresh tuna with spicy mayo and tempura crunch", pieces: "6 pcs" },
     { name: "Lovers' Special Roll", description: "Chef's special creation for two 💕", pieces: "10 pcs" },
+  ];
+  
+  const sandwiches = [
+    { name: "[Sandwich Name]", description: "[Add your description here]" },
+    { name: "[Sandwich Name]", description: "[Add your description here]" },
+    { name: "[Sandwich Name]", description: "[Add your description here]" },
+  ];
+  
+  const desserts = [
+    { name: "Jello Shots", description: "[Add flavor/description]", icon: "🍬" },
+    { name: "Brownies", description: "[Add description]", icon: "🍫" },
+    { name: "Cake Pops", description: "[Add flavor/description]", icon: "🍰" },
+    { name: "[Add Dessert]", description: "[Add description]", icon: "🧁" },
   ];
   
   const cocktails = [
@@ -33,7 +46,7 @@ export const Slide7DinnerMenu = () => {
   ];
   
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
+    <div className="relative min-h-screen flex flex-col items-center px-4 py-12 overflow-hidden">
       <SparkleGroup count={8} />
       
       {/* Elegant background pattern */}
@@ -70,7 +83,7 @@ export const Slide7DinnerMenu = () => {
         {/* Menu Content */}
         <div className="bg-card/90 backdrop-blur-sm rounded-3xl shadow-heart overflow-hidden">
           {/* Sushi Section */}
-          <div className="p-8 sm:p-10 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <div className="p-6 sm:p-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="flex items-center justify-center gap-3 mb-6">
               <Star className="w-4 h-4 text-valentine-gold fill-valentine-gold" />
               <h2 className="font-elegant text-2xl text-valentine-deep">Sushi Selection</h2>
@@ -81,7 +94,7 @@ export const Slide7DinnerMenu = () => {
               {sushiItems.map((item, index) => (
                 <div 
                   key={index}
-                  className="menu-item flex items-center justify-between py-4 group"
+                  className="menu-item flex items-center justify-between py-3 group"
                 >
                   <div className="flex-1">
                     <h3 className="font-body font-semibold text-foreground group-hover:text-valentine-deep transition-colors">
@@ -93,12 +106,60 @@ export const Slide7DinnerMenu = () => {
                 </div>
               ))}
             </div>
+          </div>
+          
+          {/* Divider */}
+          <div className="h-px bg-gradient-to-r from-transparent via-valentine-rose/30 to-transparent" />
+          
+          {/* Sandwiches Section */}
+          <div className="p-6 sm:p-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Sandwich className="w-5 h-5 text-valentine-deep" />
+              <h2 className="font-elegant text-2xl text-valentine-deep">Sandwiches</h2>
+              <Sandwich className="w-5 h-5 text-valentine-deep" />
+            </div>
             
-            {/* Customization note */}
-            <div className="mt-6 p-4 bg-valentine-cream/50 rounded-xl text-center">
-              <p className="text-sm text-valentine-deep/70 italic">
-                ✨ [Customize your sushi selections here!] ✨
-              </p>
+            <div className="space-y-1">
+              {sandwiches.map((item, index) => (
+                <div 
+                  key={index}
+                  className="menu-item flex items-center justify-between py-3 group"
+                >
+                  <div className="flex-1">
+                    <h3 className="font-body font-semibold text-foreground group-hover:text-valentine-deep transition-colors">
+                      {item.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Divider */}
+          <div className="h-px bg-gradient-to-r from-transparent via-valentine-rose/30 to-transparent" />
+          
+          {/* Desserts Section */}
+          <div className="p-6 sm:p-8 bg-gradient-to-b from-transparent to-valentine-peach/20 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Cake className="w-5 h-5 text-valentine-rose" />
+              <h2 className="font-elegant text-2xl text-valentine-deep">Sweet Treats</h2>
+              <Cake className="w-5 h-5 text-valentine-rose" />
+            </div>
+            
+            <div className="grid grid-cols-2 gap-3">
+              {desserts.map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-4 rounded-2xl bg-card/80 border border-valentine-blush/30 hover:shadow-valentine transition-all duration-300 text-center"
+                >
+                  <span className="text-2xl">{item.icon}</span>
+                  <h3 className="font-body font-semibold text-foreground mt-2 text-sm">
+                    {item.name}
+                  </h3>
+                  <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                </div>
+              ))}
             </div>
           </div>
           
@@ -106,27 +167,27 @@ export const Slide7DinnerMenu = () => {
           <div className="h-px bg-gradient-to-r from-transparent via-valentine-rose/30 to-transparent" />
           
           {/* Cocktails Section */}
-          <div className="p-8 sm:p-10 bg-gradient-to-b from-transparent to-valentine-cream/30 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="p-6 sm:p-8 bg-gradient-to-b from-transparent to-valentine-cream/30 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex items-center justify-center gap-3 mb-6">
               <Wine className="w-5 h-5 text-valentine-rose" />
               <h2 className="font-elegant text-2xl text-valentine-deep">Signature Cocktails</h2>
               <Wine className="w-5 h-5 text-valentine-rose" />
             </div>
             
-            <p className="text-center text-sm text-muted-foreground mb-8 italic">
+            <p className="text-center text-sm text-muted-foreground mb-6 italic">
               Named after our beloved fur babies 🐾
             </p>
             
-            <div className="grid gap-4">
+            <div className="grid gap-3">
               {cocktails.map((cocktail, index) => (
                 <div 
                   key={index}
-                  className={`p-5 rounded-2xl bg-gradient-to-r ${cocktail.color} border border-valentine-blush/20 hover:shadow-valentine transition-all duration-300`}
+                  className={`p-4 rounded-2xl bg-gradient-to-r ${cocktail.color} border border-valentine-blush/20 hover:shadow-valentine transition-all duration-300`}
                 >
-                  <div className="flex items-start gap-4">
-                    <span className="text-3xl">{cocktail.icon}</span>
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">{cocktail.icon}</span>
                     <div>
-                      <h3 className="font-script text-xl text-valentine-deep">{cocktail.name}</h3>
+                      <h3 className="font-script text-lg text-valentine-deep">{cocktail.name}</h3>
                       <p className="text-sm text-foreground/80 mt-1">{cocktail.description}</p>
                     </div>
                   </div>
@@ -156,7 +217,7 @@ export const Slide7DinnerMenu = () => {
         </div>
         
         {/* Bottom message */}
-        <div className="mt-10 text-center animate-fade-up" style={{ animationDelay: '0.6s' }}>
+        <div className="mt-8 text-center animate-fade-up" style={{ animationDelay: '0.6s' }}>
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-valentine-rose/20 rounded-full">
             <Sparkles className="w-4 h-4 text-valentine-deep" />
             <span className="font-elegant text-valentine-deep">Forever Yours, Erick</span>
