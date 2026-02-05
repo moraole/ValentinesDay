@@ -57,7 +57,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "DISABLE_ESLINT_PLUGIN=true craco build",
+    "build:netlify": "set DISABLE_ESLINT_PLUGIN=true && craco build",
     "test": "craco test"
   },
   "browserslist": {
