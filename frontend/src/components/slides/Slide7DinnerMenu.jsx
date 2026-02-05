@@ -10,9 +10,9 @@ export const Slide7DinnerMenu = () => {
   ];
   
   const sandwiches = [
-    { name: "[Sandwich Name]", description: "[Add your description here]" },
-    { name: "[Sandwich Name]", description: "[Add your description here]" },
-    { name: "[Sandwich Name]", description: "[Add your description here]" },
+    { name: "Ericks BIG TUNA", description: "A basic tuna sandich hehe (for fun)" },
+    { name: "Lei and Ericks CLUB LULU", description: "A fun sandwich" },
+    { name: "Shrimp Po Boy", description: "Yummiest Shrimp Sandwich from lousianna" },
   ];
   
   const desserts = [

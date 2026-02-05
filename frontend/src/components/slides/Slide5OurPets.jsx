@@ -86,7 +86,7 @@ export const Slide5OurPets = ({ onNext }) => {
             <Heart className="w-4 h-4 text-valentine-rose fill-valentine-rose" />
           </div>
           <p className="font-elegant text-valentine-deep">
-            Our little family 💕
+            cute little guys we love teehee💕
           </p>
         </div>
       </div>
