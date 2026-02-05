@@ -52,7 +52,7 @@ export const Slide2HowWeMet = ({ onNext }) => {
         {/* Quote decoration */}
         <div className="mt-8 p-6 bg-valentine-cream/50 rounded-2xl border border-valentine-blush/30">
           <p className="font-elegant text-valentine-deep italic text-center">
-            "Every love story is beautiful, but ours is my favorite."
+            &ldquo;Every love story is beautiful, but ours is my favorite.&rdquo;
           </p>
         </div>
       </div>

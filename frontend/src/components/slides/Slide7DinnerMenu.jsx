@@ -59,7 +59,7 @@ export const Slide7DinnerMenu = () => {
             Valentine's Dinner
           </h1>
           <p className="font-elegant text-lg text-muted-foreground italic">
-            A Special Evening for Erick & Lei
+            A Special Evening for Erick &amp; Lei
           </p>
           <div className="flex justify-center items-center gap-3 mt-4">
             <div className="h-px w-16 bg-valentine-rose/30" />

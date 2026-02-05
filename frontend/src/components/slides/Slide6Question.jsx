@@ -11,16 +11,23 @@ export const Slide6Question = ({ onNext }) => {
       <SparkleGroup count={10} />
       
       {/* Floating hearts background */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        {[
+          { size: 35, left: '15%', top: '20%' },
+          { size: 28, left: '75%', top: '15%' },
+          { size: 42, left: '85%', top: '60%' },
+          { size: 32, left: '10%', top: '70%' },
+          { size: 25, left: '50%', top: '85%' },
+          { size: 38, left: '30%', top: '40%' }
+        ].map((heart, i) => (
           <Heart 
             key={i}
             className="absolute text-valentine-rose/20 fill-valentine-rose/10 animate-float"
             style={{
-              width: `${20 + Math.random() * 30}px`,
-              height: `${20 + Math.random() * 30}px`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              width: `${heart.size}px`,
+              height: `${heart.size}px`,
+              left: heart.left,
+              top: heart.top,
               animationDelay: `${i * 0.5}s`
             }}
           />
@@ -81,7 +88,7 @@ export const Slide6Question = ({ onNext }) => {
           {/* Custom message area */}
           <div className="mt-8 p-6 bg-valentine-cream/50 rounded-2xl border border-valentine-blush/30">
             <p className="font-elegant text-valentine-deep italic">
-              [Add your personal message here - tell Lei why they're so special to you!]
+              [Add your personal message here - tell Lei why they are so special to you]
             </p>
           </div>
         </div>

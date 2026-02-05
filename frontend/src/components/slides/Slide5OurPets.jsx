@@ -73,7 +73,7 @@ export const Slide5OurPets = ({ onNext }) => {
               </div>
               
               <p className="mt-4 text-xs text-valentine-rose/70 italic">
-                [Add a photo or fun fact about {pet.name}!]
+                [Add a photo or fun fact about {pet.name}]
               </p>
             </div>
           ))}
@@ -87,10 +87,10 @@ export const Slide5OurPets = ({ onNext }) => {
             <Heart className="w-5 h-5 text-valentine-rose fill-valentine-rose" />
           </div>
           <p className="font-elegant text-lg text-valentine-deep">
-            "Together, we make the purrfect family!"
+            &ldquo;Together, we make the purrfect family!&rdquo;
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            From fur parents Erick & Lei 🐾
+            From fur parents Erick &amp; Lei
           </p>
         </div>
       </div>

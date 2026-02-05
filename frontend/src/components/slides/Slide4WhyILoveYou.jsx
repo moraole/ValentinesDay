@@ -69,7 +69,7 @@ export const Slide4WhyILoveYou = ({ onNext }) => {
         {/* Love quote */}
         <div className="mt-10 text-center animate-fade-up" style={{ animationDelay: '0.9s' }}>
           <p className="font-elegant text-lg sm:text-xl text-valentine-deep italic">
-            "I love you not only for what you are, but for what I am when I am with you."
+            &ldquo;I love you not only for what you are, but for what I am when I am with you.&rdquo;
           </p>
           <p className="text-sm text-muted-foreground mt-2">— Roy Croft</p>
         </div>

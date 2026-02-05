@@ -1,14 +1,23 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef } from 'react';
 import { FloatingHeart } from './AnimatedHeart';
 
+// Generate seeded random numbers for consistent rendering
+const seededRandom = (seed) => {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+};
+
 export const FloatingHearts = ({ count = 15 }) => {
+  const seedRef = useRef(Date.now());
+  
   const hearts = useMemo(() => {
+    const seed = seedRef.current;
     return Array.from({ length: count }, (_, i) => ({
       id: i,
-      left: `${Math.random() * 100}%`,
-      delay: Math.random() * 8,
-      size: ['xs', 'sm', 'md'][Math.floor(Math.random() * 3)],
-      duration: 6 + Math.random() * 4
+      left: `${seededRandom(seed + i * 1.1) * 100}%`,
+      delay: seededRandom(seed + i * 2.2) * 8,
+      size: ['xs', 'sm', 'md'][Math.floor(seededRandom(seed + i * 3.3) * 3)],
+      duration: 6 + seededRandom(seed + i * 4.4) * 4
     }));
   }, [count]);
   
