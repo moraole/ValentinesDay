@@ -4,11 +4,9 @@ import { Heart, Sparkles, UtensilsCrossed, Wine, Star, Sandwich, Cake } from 'lu
 
 export const Slide7DinnerMenu = () => {
   const sushiItems = [
-    { name: "Salmon Nigiri", description: "Fresh Atlantic salmon over seasoned rice", pieces: "2 pcs" },
-    { name: "Tuna Sashimi", description: "Premium bluefin tuna, thinly sliced", pieces: "4 pcs" },
-    { name: "Rainbow Roll", description: "California roll topped with assorted fish", pieces: "8 pcs" },
-    { name: "Spicy Tuna Roll", description: "Fresh tuna with spicy mayo and tempura crunch", pieces: "6 pcs" },
-    { name: "Lovers' Special Roll", description: "Chef's special creation for two 💕", pieces: "10 pcs" },
+    { name: "Erick's Salmon Nigiri", description: "Fresh Atlantic salmon over seasoned rice"},
+    { name: "Rainbow Roll", description: "California roll topped with assorted fish" },
+    { name: "Lovers' Special Roll", description: "Chef's special creation for two 💕"},
   ];
   
   const sandwiches = [
@@ -18,28 +16,28 @@ export const Slide7DinnerMenu = () => {
   ];
   
   const desserts = [
-    { name: "Jello Shots", description: "[Add flavor/description]", icon: "🍬" },
-    { name: "Brownies", description: "[Add description]", icon: "🍫" },
-    { name: "Cake Pops", description: "[Add flavor/description]", icon: "🍰" },
-    { name: "[Add Dessert]", description: "[Add description]", icon: "🧁" },
+    { name: "Jello Shots", description: "Yummy jello shots to drink and get drunk!", icon: "🍬" },
+    { name: "Brownies", description: "yummy chocolate brownies (with some THC for some fun teehee)", icon: "🍫" },
+    { name: "Cake Pops", description: "Reattempting with success!", icon: "🍰" },
+    { name: "Cupcakes!", description: "Fun. colorful valentine's day cupcakes!", icon: "🧁" },
   ];
   
   const cocktails = [
     { 
       name: "The Suede", 
-      description: "A smooth, velvety blend of vanilla vodka, white peach, and rose water",
+      description: "A smooth, velvety blend of vanilla vodka, water and a club soda/soda of choice",
       icon: "🥂",
       color: "from-amber-100 to-rose-100"
     },
     { 
       name: "Blu Lagoon", 
-      description: "Refreshing blue curaçao with citrus notes and a splash of champagne",
+      description: "Refreshing blue beatbox, mixed with a special drink of choice",
       icon: "🍸",
       color: "from-blue-100 to-cyan-100"
     },
     { 
-      name: "Popa's Paradise", 
-      description: "Tropical passion fruit with elderflower and prosecco bubbles",
+      name: "Popa's Paradisee", 
+      description: "Twisted Tea, Buzzball and a special mix of love.",
       icon: "🍹",
       color: "from-orange-100 to-pink-100"
     },
@@ -175,7 +173,7 @@ export const Slide7DinnerMenu = () => {
             </div>
             
             <p className="text-center text-sm text-muted-foreground mb-6 italic">
-              Named after our beloved fur babies 🐾
+              Bringing the pets in for some love too!🐾
             </p>
             
             <div className="grid gap-3">
