@@ -32,28 +32,34 @@ export const Slide5OurPets = ({ onNext }) => {
         
         {/* Image Placeholders Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          {/* Suede */}
+          {/* Suede - lighter dog with green jacket */}
           <div 
             className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
             style={{ animationDelay: '0.15s' }}
           >
-            <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-valentine-blush/50 to-valentine-peach/50 flex flex-col items-center justify-center border-2 border-dashed border-valentine-rose/30 group-hover:border-valentine-rose/50 transition-colors overflow-hidden">
-              <ImageIcon className="w-12 h-12 text-valentine-rose/40 mb-2" />
-              <p className="text-sm text-valentine-deep/60 font-medium">Suede</p>
-              <p className="text-xs text-muted-foreground mt-1">[Add photo]</p>
+            <div className="aspect-square w-full rounded-2xl overflow-hidden">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_pawsome-valentines/artifacts/k8ylowd8_IMG_0343.jpeg" 
+                alt="Suede"
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </div>
+            <p className="text-center text-sm text-valentine-deep font-medium mt-2">Suede</p>
           </div>
           
-          {/* Blu */}
+          {/* Blu - darker dog on the beach */}
           <div 
             className="bg-card/80 backdrop-blur-sm rounded-3xl p-4 shadow-valentine hover:shadow-heart transition-all duration-300 hover:-translate-y-2 animate-fade-up group"
             style={{ animationDelay: '0.3s' }}
           >
-            <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-valentine-blush/50 to-valentine-peach/50 flex flex-col items-center justify-center border-2 border-dashed border-valentine-rose/30 group-hover:border-valentine-rose/50 transition-colors overflow-hidden">
-              <ImageIcon className="w-12 h-12 text-valentine-rose/40 mb-2" />
-              <p className="text-sm text-valentine-deep/60 font-medium">Blu</p>
-              <p className="text-xs text-muted-foreground mt-1">[Add photo]</p>
+            <div className="aspect-square w-full rounded-2xl overflow-hidden">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_pawsome-valentines/artifacts/5lv92hh2_IMG_0344.jpeg" 
+                alt="Blu"
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </div>
+            <p className="text-center text-sm text-valentine-deep font-medium mt-2">Blu</p>
           </div>
           
           {/* Popa - with actual photo */}
