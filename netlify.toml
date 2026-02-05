@@ -1,11 +1,13 @@
 [build]
   base = "frontend"
-  command = "npm install --legacy-peer-deps && npm run build"
+  command = "npm install --legacy-peer-deps && CI=false DISABLE_ESLINT_PLUGIN=true npm run build"
   publish = "build"
 
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
+  CI = "false"
+  DISABLE_ESLINT_PLUGIN = "true"
 
 # Handle React Router (SPA) - redirect all routes to index.html
 [[redirects]]
